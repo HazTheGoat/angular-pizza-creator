@@ -1,0 +1,22 @@
+<div class="pizza-wrapper">
+  <div class="pizza-viewer">
+    <app-pizza-viewer [form]="form.controls.toppings"></app-pizza-viewer>
+  </div>
+  <div class="pizza-form">
+    <form [formGroup]="form" noValidate>
+      <div formGroupName="credentials">
+        <app-pizza-form [form]="form.controls.credentials"></app-pizza-form>
+      </div>
+      <div formGroupName="size">
+        <app-pizza-size [form]="form.controls.size"></app-pizza-size>
+      </div>
+      <div formGroupName="toppings">
+        <app-pizza-toppings [form]="form.controls.toppings" (toppingsEmitter)="onChange($event)"></app-pizza-toppings>
+      </div>
+      <div>
+        <app-pizza-summary [form]="form"></app-pizza-summary>
+      </div>
+      <!--<pre>{{form.value | json}}</pre>-->
+    </form>
+  </div>
+</div>

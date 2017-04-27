@@ -1,0 +1,16 @@
+<div class="pizza-viewer__table-side"></div>
+<div class="pizza-viewer__table"></div>
+<div class="pizza">
+  <img src="..\..\..\..\assets\toppings\board.svg" class="pizza-board" alt="">
+  <div class="pizza-base">
+    <img src="..\..\..\..\assets\toppings\base.svg" class="base" alt="">
+
+    <div class="pizza-toppings t-{{ topping.controls.type.value }}" *ngFor="let topping of form.controls" >
+      <img class="pizza-topping" src="..\..\..\..\assets\toppings\{{ topping.controls.type.value }}.svg" alt="" @drop>
+      <img class="pizza-topping" src="..\..\..\..\assets\toppings\{{ topping.controls.type.value }}.svg" alt="" @drop>
+      <img class="pizza-topping" src="..\..\..\..\assets\toppings\{{ topping.controls.type.value }}.svg" alt="" @drop>
+      <img class="pizza-topping" src="..\..\..\..\assets\toppings\{{ topping.controls.type.value }}.svg" alt="" @drop>
+      <img class="pizza-topping" src="..\..\..\..\assets\toppings\{{ topping.controls.type.value }}.svg" alt="" @drop>
+    </div>
+  </div>
+</div>

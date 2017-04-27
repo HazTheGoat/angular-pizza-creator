@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+@import '../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
+@import 'app/_app.component.scss';
+@import 'app/pizza-app/_pizza-app.component.scss';
+@import 'app/pizza-app/components/pizza-creator/_pizza-creator.component.scss';
+@import 'app/pizza-app/components/pizza-form/_pizza-form.component.scss';
+@import 'app/pizza-app/components/pizza-size/_pizza-size.component.scss';
+@import 'app/pizza-app/components/pizza-summary/_pizza-summary.component.scss';
+@import 'app/pizza-app/components/pizza-toppings/_pizza-toppings.component.scss';
+@import 'app/pizza-app/components/pizza-viewer/_pizza-viewer.component.scss';

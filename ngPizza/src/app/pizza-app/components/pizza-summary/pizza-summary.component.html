@@ -1,0 +1,19 @@
+<h3>Order summary</h3>
+<div class="app-summary">
+  <div class="pizza-size">
+    <span>{{form.controls.size.controls.size.value}} pizza</span>
+    <span *ngIf="form.controls.size.controls.size.value == 'Large'">178,- </span>
+    <span *ngIf="form.controls.size.controls.size.value == 'Medium'">118,-</span>
+    <span *ngIf="form.controls.size.controls.size.value == 'Small'">98,-</span>
+  </div>
+  <ul class="pizza-toppings-list">
+    <li *ngFor="let item of form.controls.toppings.controls">
+      <span>{{ item.controls.type.value }}</span>
+      <span>18,-</span>
+    </li>
+  </ul>
+  <hr>
+  <div class="pizza-total">
+    <span>Total: {{total}},-</span>
+  </div>
+</div>

@@ -1,0 +1,41 @@
+.app-summary {
+  font-size: 16px;
+  font-weight: 100;
+  
+  .pizza-size {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .pizza-toppings-list {
+    padding: 0;
+    margin: 0;
+
+    li {
+      display: flex;
+      justify-content: space-between;
+      padding: 3px 0;
+      padding-left: 20px;
+      position: relative;
+      color: #aaa;
+      text-transform: capitalize;
+
+      &:after,
+      &:before {
+        position: absolute;
+        content: "+";
+        left: 0;
+        color: #000;
+        font-size: 18px;
+        transform: translateY(-50%);
+        top: 50%;
+      }
+    }
+  }
+
+  .pizza-total {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 18px;
+  }
+}

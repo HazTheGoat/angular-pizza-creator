@@ -1,0 +1,37 @@
+.app-toppings {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .form-group {
+    width: 24%;
+  }
+
+  label {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #eee;
+    cursor: pointer;
+
+    img {
+      width: 50px;
+      height: 50px;
+      padding: 10px;
+      background-color: #ddd;
+      margin-right: 10px;
+    }
+  }
+
+
+
+  input[type="checkbox"] {
+    position: absolute;
+    left: -999999px;
+
+    &:checked ~ label {
+      background-color: #1a98e1;
+      color: #fff;
+    }
+  }
+}

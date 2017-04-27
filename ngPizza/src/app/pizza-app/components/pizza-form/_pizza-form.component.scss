@@ -1,0 +1,27 @@
+.app-credentials {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-right: 20px;
+    width: calc(33% - 20px);
+    margin-bottom: 20px;
+
+    &:nth-child(3n){
+      margin-right: 0;
+    }
+  }
+
+  label{
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+
+  .form-control{
+    box-shadow: none;
+  }
+}

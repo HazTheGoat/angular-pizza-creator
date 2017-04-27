@@ -1,0 +1,10 @@
+<h3>Pick your toppings</h3>
+<div [formGroup]="form" class="app-toppings">
+  <div class="form-group" *ngFor="let t of toppings; let i = index">
+    <input type="checkbox" [id]="t" [attr.index]="i" [attr.name]="t" (change)="toppingsEmitter.emit($event)">
+    <label [for]="t">
+      <img src="..\..\..\..\assets\toppings\{{t}}.svg" alt="">
+      {{t}}
+    </label>
+  </div>
+</div>

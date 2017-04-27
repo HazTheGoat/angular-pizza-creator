@@ -1,0 +1,38 @@
+.small {
+  width: 40px;
+}
+
+.medium {
+  width: 60px;
+}
+
+.large {
+  width: 80px;
+}
+
+.app-pizza-size {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+
+  .form-group {
+    width: 33%;
+    flex-grow: 1;
+  }
+
+  input[type="radio"]{
+    position: absolute;
+    left: -999999px;
+
+    &:checked ~ label{
+      color: #1a98e1;
+    }
+  }
+
+  label{
+    display: block;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+  }
+}

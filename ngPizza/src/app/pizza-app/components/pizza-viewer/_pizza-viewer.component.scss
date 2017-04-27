@@ -1,0 +1,438 @@
+.pizza-viewer {
+  min-width: 700px;
+}
+
+.pizza-viewer__table,
+.pizza-viewer__table-side {
+  width: 1680px;
+  transform: skewX(62deg);
+  position: absolute;
+  left: -230px;
+  height: 1100px;
+  z-index: 0;
+}
+
+.pizza-viewer__table-side {
+  background: #2E3744;
+  top: 380px;
+  width: 2355px;
+  left: -1000px;
+}
+
+.pizza-viewer__table {
+  background: #3A424F;
+  top: 0;
+}
+
+.pizza {
+  position: relative;
+  top: 200px;
+  left: 20px;
+
+  .pizza-base,
+  .pizza-board {
+    width: 680px;
+    position: absolute;
+  }
+
+  .pizza-base {
+    width: 450px;
+    position: relative;
+    left: 170px;
+    top: 20px;
+  }
+}
+
+.pizza-toppings {
+  .pizza-topping {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+  }
+
+  img {
+    width: 100px;
+    height: 100px;
+  }
+
+  &.t-anchovy {
+
+    img {
+      width: 81px;
+      height: 67px;
+      //top: -200px;
+      //transition: 0.2s ease;
+
+      &:nth-child(1) {
+
+        left: 78px;
+        top: 82px;
+      }
+
+      &:nth-child(2) {
+        left: 198px;
+        top: 172px;
+      }
+
+      &:nth-child(3) {
+        left: 313px;
+        top: 95px;
+      }
+
+      &:nth-child(4),
+      &:nth-child(5) {
+        display: none;
+      }
+    }
+  }
+
+  &.t-bacon {
+    img {
+      width: 86px;
+      height: 61px;
+
+      &:nth-child(1) {
+        left: 124px;
+        top: 50px;
+      }
+
+      &:nth-child(2) {
+        left: 89px;
+        top: 160px;
+      }
+
+      &:nth-child(3) {
+        left: 182px;
+        top: 86px;
+      }
+
+      &:nth-child(4) {
+        left: 289px;
+        top: 59px;
+      }
+
+      &:nth-child(5) {
+        left: 250px;
+        top: 154px;
+      }
+    }
+  }
+
+  &.t-basil {
+    img {
+      width: 66px;
+      height: 52px;
+
+      &:nth-child(1) {
+        left: 66px;
+        top: 63px;
+      }
+
+      &:nth-child(2) {
+        left: 146px;
+        top: 157px;
+      }
+
+      &:nth-child(3) {
+        left: 222px;
+        top: 68px;
+      }
+
+      &:nth-child(4) {
+        left: 289px;
+        top: 129px;
+      }
+
+      &:nth-child(5) {
+        display: none;
+      }
+    }
+  }
+
+  &.t-chili {
+    img {
+      width: 70px;
+      height: 30px;
+
+      &:nth-child(1) {
+        left: 150px;
+        top: 40px;
+      }
+
+      &:nth-child(2) {
+        left: 128px;
+        top: 107px;
+      }
+
+      &:nth-child(3) {
+        left: 122px;
+        top: 204px;
+      }
+
+      &:nth-child(4) {
+        left: 340px;
+        top: 87px;
+      }
+
+      &:nth-child(5) {
+        left: 220px;
+        top: 140px;
+      }
+    }
+  }
+
+  &.t-mozzarella {
+    img {
+      width: 76px;
+      height: 32px;
+
+      &:nth-child(1) {
+        left: 46px;
+        top: 136px;
+      }
+
+      &:nth-child(2) {
+        left: 326px;
+        top: 164px;
+      }
+
+      &:nth-child(3) {
+        left: 162px;
+        top: 128px;
+      }
+
+      &:nth-child(4) {
+        left: 280px;
+        top: 47px;
+      }
+
+      &:nth-child(5) {
+        display: none;
+      }
+    }
+  }
+
+  &.t-mushroom {
+    img {
+      width: 55px;
+      height: 56px;
+
+      &:nth-child(1) {
+        left: 120px;
+        top: 29px;
+      }
+
+      &:nth-child(2) {
+        left: 140px;
+        top: 120px;
+      }
+
+      &:nth-child(3) {
+        left: 60px;
+        top: 150px;
+      }
+
+      &:nth-child(4) {
+        left: 240px;
+        top: 30px;
+      }
+
+      &:nth-child(5) {
+        left: 260px;
+        top: 179px;
+      }
+    }
+  }
+
+  &.t-olive {
+    img {
+      width: 75px;
+      height: 56px;
+
+      &:nth-child(1) {
+        left: 161px;
+        top: 60px;
+      }
+
+      &:nth-child(2) {
+        left: 90px;
+        top: 57px;
+      }
+
+      &:nth-child(3) {
+        left: 110px;
+        top: 110px;
+      }
+
+      &:nth-child(4) {
+        left: 279px;
+        top: 47px;
+      }
+
+      &:nth-child(5) {
+        display: none;
+      }
+    }
+  }
+
+  &.t-onion {
+    img {
+      width: 87px;
+      height: 66px;
+
+      &:nth-child(1) {
+        left: 281px;
+        top: 75px;
+      }
+
+      &:nth-child(2) {
+        left: 30px;
+        top: 111px;
+      }
+
+      &:nth-child(3) {
+        left: 291px;
+        top: 145px;
+      }
+
+      &:nth-child(4) {
+        left: 172px;
+        top: 132px;
+      }
+
+      &:nth-child(5) {
+        display: none;
+      }
+    }
+  }
+
+  &.t-pepper {
+    img {
+      width: 67px;
+      height: 56px;
+
+      &:nth-child(1) {
+        left: 182px;
+        top: 30px;
+      }
+
+      &:nth-child(2) {
+        left: 225px;
+        top: 87px;
+      }
+
+      &:nth-child(3) {
+        left: 80px;
+        top: 81px;
+      }
+
+      &:nth-child(4) {
+        left: 322px;
+        top: 69px;
+      }
+
+      &:nth-child(5) {
+        left: 175px;
+        top: 147px;
+      }
+    }
+  }
+
+  &.t-pepperoni {
+    img {
+      width: 87px;
+      height: 66px;
+
+      &:nth-child(1) {
+        left: 222px;
+        top: 35px;
+      }
+
+      &:nth-child(2) {
+        left: 185px;
+        top: 107px;
+      }
+
+      &:nth-child(3) {
+        left: 110px;
+        top: 40px;
+      }
+
+      &:nth-child(4) {
+        left: 301px;
+        top: 120px;
+      }
+
+      &:nth-child(5) {
+        left: 75px;
+        top: 137px;
+      }
+    }
+  }
+
+  &.t-sweetcorn {
+    img {
+      width: 67px;
+      height: 66px;
+
+      &:nth-child(1) {
+        left: 192px;
+        top: 35px;
+      }
+
+      &:nth-child(2) {
+        left: 91px;
+        top: 81px;
+      }
+
+      &:nth-child(3) {
+        left: 192px;
+        top: 166px;
+      }
+
+      &:nth-child(4) {
+        left: 272px;
+        top: 106px;
+      }
+
+      &:nth-child(5) {
+        display: none;
+      }
+    }
+  }
+
+  &.t-tomato {
+
+    img {
+      width: 87px;
+      height: 66px;
+
+      &:nth-child(1) {
+        left: 175px;
+        top: 147px;
+      }
+
+      &:nth-child(2) {
+        left: 251px;
+        top: 41px;
+      }
+
+      &:nth-child(3) {
+        left: 55px;
+        top: 100px;
+      }
+
+      &:nth-child(4) {
+        left: 280px;
+        top: 99px;
+      }
+
+      &:nth-child(5) {
+        display: none;
+      }
+    }
+  }
+  //", "", "", "", "", "mushroom", "olive", "onion", "pepper", "pepperoni", "sweetcorn", "tomato"
+}

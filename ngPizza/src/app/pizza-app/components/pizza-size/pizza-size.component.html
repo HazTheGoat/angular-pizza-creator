@@ -1,0 +1,24 @@
+<h3>Select the size*</h3>
+<div [formGroup]="form" class="app-pizza-size">
+  <div class="form-group">
+    <input type="radio" id="large" formControlName="size" value="Large" name="size">
+    <label for="large">
+      <img class="large" src="..\..\..\..\assets\toppings\pizza.svg" alt="">
+      Large
+    </label>
+  </div>
+  <div class="form-group">
+    <input type="radio" id="medium" formControlName="size" value="Medium" name="size">
+    <label for="medium">
+      <img class="medium" src="..\..\..\..\assets\toppings\pizza.svg" alt="">
+      Medium
+    </label>
+  </div>
+  <div class="form-group">
+    <input type="radio" id="small" formControlName="size" value="Small" name="size">
+    <label for="small">
+      <img class="small" src="..\..\..\..\assets\toppings\pizza.svg" alt="">
+      Small
+    </label>
+  </div>
+</div>

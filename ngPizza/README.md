@@ -1,3 +1,5 @@
+Live: http://ngpizza.azurewebsites.net/
+
 # NgPizza
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
